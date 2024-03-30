@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9592b530-89c5-4927-858a-238cb0636aee" name="Changes" comment="" />
+    <list default="true" id="9592b530-89c5-4927-858a-238cb0636aee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/view/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/UserVacationView.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/model/UserVacationView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/Vacation.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/model/Vacation.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/JVP" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -29,14 +37,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/HONOR/Project/JVP_reload"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HONOR/Project/JVP_reload&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HONOR\Project\JVP_reload\workJVP\src\main\java\com\example\workJVP\service" />
+      <recent name="C:\Users\HONOR\Project\JVP_reload\workJVP\src\main\java\com\example\workJVP\view" />
+      <recent name="C:\Users\HONOR\Project\JVP_reload\workJVP\src\main\java\com\example\workJVP\controller" />
+      <recent name="C:\Users\HONOR\Project\JVP_reload\workJVP\src\main\java\com\example\workJVP\model" />
+      <recent name="C:\Users\HONOR\Project\JVP_reload\workJVP\src\main\java\com\example\model" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="JVP_reload" />
