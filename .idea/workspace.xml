@@ -11,6 +11,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
+=======
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/JVP" value="main" />
+      </map>
+    </option>
+>>>>>>> f23e082861c6e829f25ae9b15557afb3158c24c0
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/JVP" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -70,6 +78,7 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -100,5 +109,7 @@
         </entry>
       </map>
     </option>
+=======
+>>>>>>> f23e082861c6e829f25ae9b15557afb3158c24c0
   </component>
 </project>
