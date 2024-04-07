@@ -1,5 +1,6 @@
-package com.example.workJVP;
+package com.example.workJVP.view;
 
+import com.example.workJVP.model.*;
 import org.springframework.jdbc.support.lob.LobCreator;
 import org.springframework.stereotype.Repository;
 
@@ -12,37 +13,43 @@ public class UserRepository {
     private Connection connection;
 
 
-    public UserRepository() throws SQLException {
+    public UserRepository() {
         System.out.println("constructor start");
-        this.connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/", "postgres", "root");
+        try {
+            this.connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/", "postgres", "root");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println("constructor end");
     }
 
-    //@Autowired
-    //private JdbcTemplate jdbcTemplate;
-
 
     public void createTable() throws SQLException {
-        /**jdbcTemplate.execute*/
-        try (Statement st = this.connection.createStatement()) {
-            st.execute("""
-                    create table if not exists employees(
-                    id bigserial primary key,
-                    name_user varchar(255),
-                    date_registration date default current_date);
-                                        
-                    create table if not exists vacations(
-                    id bigserial primary key,
-                    user_id bigint not null,
-                    date_start date,
-                    date_end date,
-                    foreign key (user_id) references employees (id))""");
 
+        if (connection != null && !connection.isClosed()) {
+            try (Statement st = this.connection.createStatement()) {
+                st.execute("""
+                        create table if not exists employees(
+                        id bigserial primary key,
+                        name_user varchar(255),
+                        date_registration date default current_date);
+                                            
+                        create table if not exists vacations(
+                        id bigserial primary key,
+                        user_id bigint not null,
+                        date_start date,
+                        date_end date,
+                        foreign key (user_id) references employees (id))""");
+
+            }
+            System.out.println("создал базу -employees- and -vacations-");
+        } else {
+            System.out.println("Ошибка соединения");
+            this.connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/", "postgres", "root");
+            System.out.println("Вот тебе новое");
+            createTable();
         }
-        System.out.println("создал базу -employees- and -vacations-");
-        //return findAll();*/
-        //List<User> users = new ArrayList<>();
-        //return users;
+
     }
 
     public User saveUser(User user) throws SQLException {
@@ -57,25 +64,6 @@ public class UserRepository {
                 return userSetForUser(resultSet);
             }
         }
-
-        /**return jdbcTemplate.execute(new ConnectionCallback<User>() {
-        @Override public User doInConnection(Connection con) throws SQLException, DataAccessException {
-        PreparedStatement ps = con.prepareStatement(
-        "insert into testjvp (name_user) values (?)",
-        Statement.RETURN_GENERATED_KEYS
-        );
-        ps.setString(1, user.getName());
-        ps.execute();
-        ResultSet generatedKeys = ps.getGeneratedKeys();
-        return userSet(generatedKeys);
-        }
-        });*/
-
-        /**User newUser = jdbcTemplate.query(
-         con -> con.prepareStatement("insert into testjvp (name_user) values (?)", Statement.RETURN_GENERATED_KEYS),
-         pss -> pss.setString(1, user.getName()),
-         rs -> rs.next() ? userSet(rs) : null
-         );*/
 
         return null;
     }
@@ -92,15 +80,6 @@ public class UserRepository {
             }
         }
 
-        /**List<User> users = new ArrayList<>();
-         try (Statement statement = jdbcTemplate.getDataSource().getConnection().createStatement()) {
-         ResultSet resultSet = statement.executeQuery("select id , name_user, date_registration from testjvp");
-         while (resultSet.next()) {
-         User user = userSet(resultSet);
-         users.add(user);
-         }
-         }
-         return users;*/
         return listAllUsers;
     }
 
@@ -114,30 +93,34 @@ public class UserRepository {
                 return userSetForUser(foundUser);
             }
         }
-        /**return jdbcTemplate.query(
-         con -> con.prepareStatement("select * from testjvp where id =(?)"),
-         pss -> pss.setLong(1, id),
-         rs -> rs.next() ? userSet(rs) : null
-         );*/
+
         return null;
     }
 
-    public Vacation saveVacation(Vacation vacation) throws SQLException {
-        if (vacation.checkValidVacation(vacation)) {
-            try (PreparedStatement ps = connection.prepareStatement("insert into vacations (user_id, date_start, date_end) values (?,?,?)",
-                    Statement.RETURN_GENERATED_KEYS
-            )) {
-                ps.setLong(1, vacation.getUserId());
-                ps.setDate(2, vacation.getStartVacation());
-                ps.setDate(3, vacation.getEndVacation());
-                ps.execute();
-                ResultSet resultSet = ps.getGeneratedKeys();
-                return vacationSetForVacation(resultSet);
-            }
-        } else {
-            return null;
-        }
+    public Result<Vacation> saveVacation(Vacation vacation) throws SQLException {
 
+        if (checkValidConnection(connection)) {
+
+            Erorr erorr = vacation.checkValidVacation(vacation);
+            if (erorr.getOk()) {
+                try (PreparedStatement ps = connection.prepareStatement("insert into vacations (user_id, date_start, date_end) values (?,?,?)",
+                        Statement.RETURN_GENERATED_KEYS
+                )) {
+                    ps.setLong(1, vacation.getUserId());
+                    ps.setDate(2, vacation.getStartVacation());
+                    ps.setDate(3, vacation.getEndVacation());
+                    ps.execute();
+                    ResultSet resultSet = ps.getGeneratedKeys();
+                    return new Result<>(vacationSetForVacation(resultSet), erorr);
+
+                }
+            } else {
+                return new Result<>(null, new Erorr(false, "Date invalid"));
+            }
+
+        }else {
+            return new Result<>(null,new Erorr(false,"Error in connection"));
+        }
     }
 
     public List<Vacation> findAllVacations() throws SQLException {
@@ -189,7 +172,8 @@ public class UserRepository {
         return res;
     }
 
-    public List<UserVacationView> deleteVacationByUserIdAndVacationId(Long userId, Long vacationId) throws SQLException {
+    public List<UserVacationView> deleteVacationByUserIdAndVacationId(Long userId, Long vacationId) throws
+            SQLException {
 
         try (PreparedStatement ps = connection.prepareStatement("""
                 delete from vacations where user_id=(?) and id=(?);""")) {
@@ -207,7 +191,7 @@ public class UserRepository {
                 from employees emp
                 join vacations vac on emp.id=vac.user_id and vac.date_start<=(?)::date and (?)::date<=vac.date_end;""")) {
             ps.setString(1, dateToDay);
-            ps.setString(2,dateToDay);
+            ps.setString(2, dateToDay);
             ps.execute();
             ResultSet resultSet = ps.getResultSet();
 
@@ -285,6 +269,34 @@ public class UserRepository {
             user.setDateRegistration(generatedKeys.getDate(3));
         }
         return user;
+    }
+
+    private boolean checkValidConnection(Connection connection) {
+
+        try {
+
+            if (!connection.isClosed()) {
+                System.out.println("Test query!");
+                PreparedStatement ps = connection.prepareStatement("select 1");
+                ps.execute();
+            }else {
+                System.out.println("Open connection in block else");
+                this.connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/", "postgres", "root");
+            }
+            return true;
+        } catch (SQLException e) {
+            System.out.println("Error in query");
+            try {
+                System.out.println("New connection");
+                this.connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/", "postgres", "root");
+                return true;
+            } catch (SQLException ex) {
+                System.out.println("Что-то пошло не так. Проверь Connection");
+                return false;
+            }
+
+        }
+
     }
 
 }

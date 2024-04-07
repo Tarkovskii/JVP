@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9592b530-89c5-4927-858a-238cb0636aee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/view/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/UserVacationView.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/model/UserVacationView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/Vacation.java" beforeDir="false" afterPath="$PROJECT_DIR$/workJVP/src/main/java/com/example/workJVP/model/Vacation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jast/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jast/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jast/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jast/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jast/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jast/jast.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jast/src/java/TestApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jast/src/java/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/JVP" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,7 +43,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HONOR/Project/JVP_reload&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HONOR/Project/JVP_reload/workJVP&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -89,17 +90,6 @@
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
                   <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/main" />
-                      </list>
-                    </value>
-                  </entry>
                 </map>
               </option>
             </State>

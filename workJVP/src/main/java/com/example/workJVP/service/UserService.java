@@ -1,5 +1,11 @@
-package com.example.workJVP;
+package com.example.workJVP.service;
 
+
+import com.example.workJVP.model.Result;
+import com.example.workJVP.model.User;
+import com.example.workJVP.model.UserVacationView;
+import com.example.workJVP.model.Vacation;
+import com.example.workJVP.view.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,7 +37,7 @@ public class UserService {
         return userRepository.findAllVacations();
     }
 
-    public Vacation saveVacation(Vacation vacation) throws SQLException {
+    public Result<Vacation> saveVacation(Vacation vacation) throws SQLException {
         return userRepository.saveVacation(vacation);
     }
 

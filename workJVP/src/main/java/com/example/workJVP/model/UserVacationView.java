@@ -1,4 +1,4 @@
-package com.example.workJVP;
+package com.example.workJVP.model;
 
 import java.sql.Date;
 

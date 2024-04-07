@@ -1,7 +1,11 @@
-package com.example.workJVP;
+package com.example.workJVP.model;
+
+import org.springframework.web.servlet.function.ServerResponse;
 
 import javax.sound.midi.Soundbank;
 import java.sql.Date;
+import java.time.LocalDateTime;
+
 
 public class Vacation {
     private Long id;
@@ -57,16 +61,21 @@ public class Vacation {
         this.endVacation = endVacation;
     }
 
-    public boolean checkValidVacation(Vacation vacation) {
-        if (vacation.userId != null &
-                vacation.startVacation != null &
-                vacation.endVacation != null &
-                vacation.startVacation.before(vacation.endVacation)) {
-            System.out.println("Dates validation invalidation!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1");
-            return true;
+    public Erorr checkValidVacation(Vacation vacation) {
+        StringBuilder msg = new StringBuilder();
+
+        Erorr erorrValidVac = new Erorr(false, msg.toString());
+
+
+        if (vacation.startVacation.after(vacation.endVacation)) {
+            erorrValidVac.setMsg(String.valueOf(msg.append("Date start should be before end!")));
         }
-        System.out.println("Dates invalidation!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ");
-        return false;
+
+        if (msg.length()>0) {
+            return erorrValidVac;
+        } else {
+            return new Erorr(true, "");
+        }
 
     }
 

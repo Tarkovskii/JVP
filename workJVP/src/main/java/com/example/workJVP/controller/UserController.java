@@ -1,8 +1,11 @@
-package com.example.workJVP;
+package com.example.workJVP.controller;
 
+import com.example.workJVP.model.*;
+import com.example.workJVP.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -60,8 +63,13 @@ public class UserController {
     }
 
     @PostMapping(path = "/save-vacation")
-    public Vacation saveVacation(@RequestBody Vacation vacation) throws SQLException {
-        return userService.saveVacation(vacation);
+    public Result<?> saveVacation(@RequestBody Vacation vacation) throws SQLException {
+        Result<Vacation> res = userService.saveVacation(vacation);
+        if(res.getErr().getOk()){
+            return res;
+        }else {
+            return new Result<>(null, res.getErr()); //userService.saveVacation(vacation);
+        }
     }
 
     @PostMapping(path = "/save-user")
