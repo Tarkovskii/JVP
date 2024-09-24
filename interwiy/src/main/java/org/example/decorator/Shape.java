@@ -1,2 +1,6 @@
-package org.example.decorator;public interface Shape {
+package org.example.decorator;
+
+public interface Shape {
+    void draw();
+
 }

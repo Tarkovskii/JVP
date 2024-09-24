@@ -1,2 +1,7 @@
-package org.example.facade;public interface Car {
+package org.example.facade;
+
+public interface Car {
+    void start();
+    void stop();
+
 }

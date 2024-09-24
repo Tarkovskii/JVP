@@ -1,6 +1,4 @@
-package org.example;
-
-import java.util.EmptyStackException;
+package org.example.builder;
 
 public class Person {
     private String name;

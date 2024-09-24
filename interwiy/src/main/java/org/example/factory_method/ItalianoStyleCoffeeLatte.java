@@ -1,2 +1,4 @@
-package org.example.factory_method;public class ItalianoStyleCoffeeLatte {
+package org.example.factory_method;
+
+public class ItalianoStyleCoffeeLatte extends Coffee{
 }
