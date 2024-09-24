@@ -1,4 +1,4 @@
-package tutorial;
+package tutorial.keyboards;
 
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;

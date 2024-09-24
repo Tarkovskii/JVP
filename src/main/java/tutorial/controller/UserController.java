@@ -1,2 +1,4 @@
-package tutorial.controller;public class UserController {
+package tutorial.controller;
+
+public class UserController {
 }
