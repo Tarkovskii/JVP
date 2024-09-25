@@ -9,7 +9,7 @@ import tutorial.command.ListenerCommands;
 public class Main {
     public static void main(String[] args) throws TelegramApiException {
 
-        Bot bot = new Bot(/**for name and token*);
+        Bot bot = new Bot(/**for name and token*/);
         bot.connectionBot();
 
 
