@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9592b530-89c5-4927-858a-238cb0636aee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jast/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jast/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jast/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jast/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jast/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jast/jast.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jast/src/java/TestApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jast/src/java/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="9592b530-89c5-4927-858a-238cb0636aee" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,21 +46,6 @@
       <recent name="C:\Users\HONOR\Project\JVP_reload\workJVP\src\main\java\com\example\model" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="JVP_reload" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="JVP_reload" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -92,6 +68,17 @@
                   <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
@@ -104,6 +91,11 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="origin/main" />
                 </option>
               </RecentGroup>
@@ -114,12 +106,18 @@
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="main" />
+                  <option value="HEAD" />
                 </option>
               </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="HEAD" />
+                  <option value="*" />
                 </option>
               </RecentGroup>
             </list>
