@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c103c542-44b9-40c8-bf7f-c13714575cb5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/Bot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/command/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/command/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/command/ListenerCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/command/ListenerCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/command/ResponseOnCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/command/ResponseOnCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/controller/VacationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/controller/VacationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/keyboards/SenderKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/keyboards/SenderKeyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/model/UserVacationView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/model/UserVacationView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/model/Vacation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/model/Vacation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/repo/CacheRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/repo/CacheRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/repo/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/repo/Repository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +28,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2ex7oH3f2ZQJJnimcULVCcb7cyv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -61,11 +42,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/HONOR/Project/JVP_reload",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -96,8 +81,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712834552015</updated>
+      <workItem from="1727338737612" duration="9000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
