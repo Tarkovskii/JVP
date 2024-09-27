@@ -30,7 +30,7 @@ public class UserRepository {
             try (Statement st = this.connection.createStatement()) {
                 st.execute("""
                         create table if not exists employees(
-                        id bigserial primary key,
+                        id bigint primary key,
                         name_user varchar(255),
                         date_registration date default current_date);
                                             
@@ -55,9 +55,10 @@ public class UserRepository {
     public User saveUser(User user) throws SQLException {
         if (user.checkOnValidationUser(user)) {
 
-            try (PreparedStatement ps = connection.prepareStatement("insert into employees (name_user) values (?)",
+            try (PreparedStatement ps = connection.prepareStatement("insert into employees (id,name_user) values (?,?)",
                     Statement.RETURN_GENERATED_KEYS)) {
-                ps.setString(1, user.getName());
+                ps.setLong(1,user.getId());
+                ps.setString(2, user.getName());
                 ps.execute();
                 System.out.println("Добавил данные");
                 ResultSet resultSet = ps.getGeneratedKeys();

@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="9592b530-89c5-4927-858a-238cb0636aee" name="Changes" comment="" />
 =======
+=======
+>>>>>>> eeaee22da7445d6c6715e34940b24a24675802e5
     <list default="true" id="9592b530-89c5-4927-858a-238cb0636aee" name="Changes" comment="test repo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -18,8 +21,11 @@
   </component>
   <component name="Git.Settings">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/JVP" />
 =======
+=======
+>>>>>>> eeaee22da7445d6c6715e34940b24a24675802e5
     <excluded-from-favorite>
       <branch-storage>
         <map>
@@ -33,8 +39,12 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/JNPbot" />
 >>>>>>> a237682 (go bot2)
+=======
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/GoToEnet" />
+>>>>>>> eeaee22da7445d6c6715e34940b24a24675802e5
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,14 +62,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HONOR/Project/JVP_reload/workJVP&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/HONOR/Project/JVP_reload/JNPbot",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HONOR\Project\JVP_reload\workJVP\src\main\java\com\example\workJVP\service" />
@@ -93,10 +104,17 @@
               </option>
               <option name="FILTERS">
                 <map>
+<<<<<<< HEAD
                   <entry key="user">
                     <value>
                       <list>
                         <option value="*" />
+=======
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+>>>>>>> eeaee22da7445d6c6715e34940b24a24675802e5
                       </list>
                     </value>
                   </entry>
@@ -124,12 +142,16 @@
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="origin/temp_main" />
+                  <option value="main" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+<<<<<<< HEAD
                   <option value="HEAD" />
+=======
+                  <option value="origin/temp_main" />
+>>>>>>> eeaee22da7445d6c6715e34940b24a24675802e5
                 </option>
               </RecentGroup>
             </list>
@@ -148,5 +170,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="test repo" />
   </component>
 </project>

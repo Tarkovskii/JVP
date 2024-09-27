@@ -1,2 +1,6 @@
-package org.example.composite;public interface Component {
+package org.example.composite;
+
+public interface Component {
+
+    void show();
 }

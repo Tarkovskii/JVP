@@ -1,2 +1,4 @@
-package org.example.strategy;public class ChildrenBagges {
+package org.example.strategy;
+
+public class ChildrenBagges extends Auto{
 }
