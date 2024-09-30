@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/JNPbot" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/JVP" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Question" vcs="Git" />
-=======
-    <mapping directory="$PROJECT_DIR$" vcs="" />
-    <mapping directory="$PROJECT_DIR$/GoToEnet" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/JNPbot" vcs="" />
-    <mapping directory="$PROJECT_DIR$/JVP" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Question" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/jast" vcs="Git" />
->>>>>>> eeaee22da7445d6c6715e34940b24a24675802e5
     <mapping directory="$PROJECT_DIR$/jsonExample" vcs="Git" />
   </component>
 </project>
