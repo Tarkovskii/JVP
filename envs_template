@@ -1,0 +1,4 @@
+export POSTGRES_USER=
+export POSTGRES_PASSWORD=
+export BOT_NAME=
+export BOT_TOKEN=

@@ -1,0 +1,9 @@
+services:
+  bot:
+    build:
+      context: ../
+      dockerfile: build/Dockerfile
+    image: bot
+    environment:
+      BOT_NAME: ${BOT_NAME}
+      BOT_TOKEN: ${BOT_TOKEN}

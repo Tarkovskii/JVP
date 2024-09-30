@@ -1,2 +1,2 @@
-BOT_NAME=
-BOT_TOKEN=
+export BOT_NAME=
+export BOT_TOKEN=
