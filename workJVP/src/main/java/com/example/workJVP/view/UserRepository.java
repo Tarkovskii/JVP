@@ -16,7 +16,7 @@ public class UserRepository {
     public UserRepository() {
         System.out.println("constructor start");
         try {
-            this.connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/", "postgres", "root");
+            this.connection = DriverManager.getConnection("jdbc:postgresql://bot_server_pg:5432/", "postgres", "root");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

@@ -1,0 +1,21 @@
+services:
+  bot_server_pg:
+    image: postgres:14.13
+    environment:
+      POSTGRES_USER: POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+
+  bot_server:
+    image: bot_server
+    depends_on:
+      - bot_server_pg
+  
+  bot:
+    image: bot
+    environment:
+      BOT_NAME: ${BOT_NAME}
+      BOT_TOKEN: ${BOT_TOKEN}
+    depends_on:
+      - bot_server
