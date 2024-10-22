@@ -58,8 +58,8 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="BOT_TOKEN" value="7193728621:AAEowcqCB8WSbk0I_urE4pGTsUnTkC0uHEE" />
-        <env name="BOT_NAME" value="JVPbot" />
+        <env name="BOT_TOKEN" value="$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" />
+        <env name="BOT_NAME" value="$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="tutorial.Main" />
       <module name="JNPbot" />
