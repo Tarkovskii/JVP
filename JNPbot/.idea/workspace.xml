@@ -59,7 +59,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="BOT_TOKEN" value="$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" />
-        <env name="BOT_NAME" value="$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" />
+        <env name="BOT_NAME" value="$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="tutorial.Main" />
       <module name="JNPbot" />
