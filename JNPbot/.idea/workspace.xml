@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c103c542-44b9-40c8-bf7f-c13714575cb5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workJVP/src/main/java/com/example/workJVP/filter/ApiKeyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workJVP/src/main/java/com/example/workJVP/WorkJvpApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../workJVP/src/main/java/com/example/workJVP/WorkJvpApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,7 @@
   <component name="ProjectId" id="2ex7oH3f2ZQJJnimcULVCcb7cyv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -42,7 +46,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/HONOR/Project/temp/JVP",
+    "last_opened_file_path": "C:/Users/HONOR/Project/JVP_reload/JNPbot",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -53,6 +57,10 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="BOT_TOKEN" value="7193728621:AAEowcqCB8WSbk0I_urE4pGTsUnTkC0uHEE" />
+        <env name="BOT_NAME" value="JVPbot" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="tutorial.Main" />
       <module name="JNPbot" />
       <extension name="coverage">

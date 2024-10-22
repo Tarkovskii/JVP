@@ -27,8 +27,8 @@ public class Repository {
         StringBuffer urlSearchUserById = new StringBuffer(SearchUserById);
         urlSearchUserById.append(id);
 
-        URL url = new URL(String.valueOf(urlSearchUserById));
-        try (InputStream inputStream = url.openStream()) {
+        HttpURLConnection con = callApi(urlSearchUserById);
+        try (InputStream inputStream = con.getInputStream()) {
 
             byte[] buffer = inputStream.readAllBytes();
             String inputString = new String(buffer);
@@ -54,6 +54,12 @@ public class Repository {
         }
     }
 
+    private static HttpURLConnection callApi(StringBuffer endpoint) throws IOException {
+        URL url = new URL(endpoint.toString());
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        return con;
+    }
+
     public void saveUser(User user) throws IOException {
         try {
             if (!thisUserExist(user)) {
@@ -61,6 +67,7 @@ public class Repository {
                 URL url = new URL(SaveUser);
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setRequestMethod("POST");
+                con.setRequestProperty("API-KEY", "123123123sdfkjsdlfj");
                 con.setRequestProperty("Content-type", "application/json");
                 con.setRequestProperty("Accept", "application/json");
                 con.setDoOutput(true);

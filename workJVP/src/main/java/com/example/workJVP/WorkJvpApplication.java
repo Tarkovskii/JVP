@@ -5,6 +5,7 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Bean;
 
 import javax.sql.DataSource;
@@ -17,6 +18,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 @SpringBootApplication
+@ServletComponentScan
 public class WorkJvpApplication {
 
 

@@ -95,7 +95,11 @@ public class ResponseOnCommands {
     }
 
     public synchronized EditMessageReplyMarkup responseMonth(Update update, Long forChatId, String text) {
-        if (cacheRepo.personIsExist(forChatId) && !cacheRepo.getBufferPersonByID(forChatId).isValidEndVac() && text.substring(0, 1).equals("y") && text.substring(5).equals("-")) {
+        if (cacheRepo.personIsExist(forChatId)
+                && !cacheRepo.getBufferPersonByID(forChatId).isValidEndVac()
+                && text.substring(0, 1).equals("y")
+                && text.substring(5).equals("-")
+        ) {
             cacheRepo.setDateBufferPersonByID(forChatId, text.substring(1, 6));
             System.out.println(cacheRepo.findUserByID(forChatId));
             return EditMessageReplyMarkup.builder()
@@ -160,7 +164,7 @@ public class ResponseOnCommands {
 
     public SendMessage responseShowAllVacationsForUser(Update update, Long forChatId) {
         String forMassage = formatterAllVacationByUser(cacheRepo.loaderVacationsForUserFromDB(forChatId));
-        if(forMassage.isEmpty()){
+        if (forMassage.isEmpty()) {
             forMassage = "Список отпусков пуст";
         }
         return SendMessage.builder()
